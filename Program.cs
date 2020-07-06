@@ -116,7 +116,7 @@ namespace console_program
         }
         //@@@@@@@@@@@@@@@@functions for data and storing info
         static Boolean PromptUser(SQLiteConnection connection,String User){
-            Console.WriteLine("\nHit Backspace to create a new entry or Hit Enter to view information.");
+            Console.WriteLine("\nHit Backspace to create a new entry or Hit Enter to view information. Hit Esc to end session.");
             ConsoleKeyInfo info = Console.ReadKey(true);
             if(info.Key == ConsoleKey.Backspace){
                 CreateNewEntry(connection,User);
@@ -223,40 +223,4 @@ namespace console_program
         }
     }
 }
-
- 
-//       static void InsertData(SQLiteConnection conn)
-//       {
-//          SQLiteCommand sqlite_cmd;
-//          sqlite_cmd = conn.CreateCommand();
-//          sqlite_cmd.CommandText = "INSERT INTO SampleTable(Col1, Col2) VALUES ('Test Text ', 1);";
-//          sqlite_cmd.ExecuteNonQuery();
-//          sqlite_cmd.CommandText = "INSERT INTO SampleTable(Col1, Col2) VALUES ('Test1 Text1 ', 2);";
-//          sqlite_cmd.ExecuteNonQuery();
-//          sqlite_cmd.CommandText = "INSERT INTO SampleTable(Col1, Col2) VALUES ('Test2 Text2 ', 3);";
-//          sqlite_cmd.ExecuteNonQuery();
- 
- 
-//          sqlite_cmd.CommandText = "INSERT INTO SampleTable1(Col1, Col2) VALUES ('Test3 Text3 ', 3);";
-//          sqlite_cmd.ExecuteNonQuery();
- 
-//       }
- 
-//       static void ReadData(SQLiteConnection conn)
-//       {
-//          SQLiteDataReader sqlite_datareader;
-//          SQLiteCommand sqlite_cmd;
-//          sqlite_cmd = conn.CreateCommand();
-//          sqlite_cmd.CommandText = "SELECT * FROM SampleTable";
- 
-//          sqlite_datareader = sqlite_cmd.ExecuteReader();
-//          while (sqlite_datareader.Read())
-//          {
-//             string myreader = sqlite_datareader.GetString(0);
-//             Console.WriteLine(myreader);
-//          }
-//          conn.Close();
-//       }
-//    }
-// }
  
