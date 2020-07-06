@@ -106,6 +106,7 @@ namespace console_program
             return (cmd.ExecuteScalar()!= null);
         }  
         static Tuple<Boolean,String> tryLogin(SQLiteConnection connection){
+            Console.Write("\nLogin\n");
             Console.Write("Enter your user name : ");
             string userName = Console.ReadLine();
             Console.Write("Enter your password  : ");
@@ -143,13 +144,13 @@ namespace console_program
             cmd.CommandText = "SELECT * FROM DATA WHERE loginusername = @User";
             cmd.Parameters.Add("@user",DbType.String).Value = User;
             reader = cmd.ExecuteReader();
-            Console.WriteLine("\nUser|Platform|Username|Password");
+            Console.WriteLine("\nPlatform|Username|Password");
             while(reader.Read()){
-                string user = reader.GetString(0);
+                //string user = reader.GetString(0);
                 string platform = reader.GetString(1);
                 string username = reader.GetString(2);
                 string password = reader.GetString(3);
-                Console.WriteLine(user + ","+platform+","+username+","+password);
+                Console.WriteLine(platform+","+username+","+password);
             }
         }
         static void InsertNewEntry(SQLiteConnection connection,String User,String platform,String username,String password){
