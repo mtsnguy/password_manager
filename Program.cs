@@ -116,7 +116,7 @@ namespace console_program
         }
         //@@@@@@@@@@@@@@@@functions for data and storing info
         static Boolean PromptUser(SQLiteConnection connection,String User){
-            Console.WriteLine("Hit Backspace to create a new entry or Hit Enter to view information.");
+            Console.WriteLine("\nHit Backspace to create a new entry or Hit Enter to view information.");
             ConsoleKeyInfo info = Console.ReadKey(true);
             if(info.Key == ConsoleKey.Backspace){
                 CreateNewEntry(connection,User);
@@ -143,13 +143,13 @@ namespace console_program
             cmd.CommandText = "SELECT * FROM DATA WHERE loginusername = @User";
             cmd.Parameters.Add("@user",DbType.String).Value = User;
             reader = cmd.ExecuteReader();
-            Console.WriteLine("User|Platform|Username|Password");
+            Console.WriteLine("\nUser|Platform|Username|Password");
             while(reader.Read()){
                 string user = reader.GetString(0);
                 string platform = reader.GetString(1);
                 string username = reader.GetString(2);
                 string password = reader.GetString(3);
-                Console.WriteLine(user + "|"+platform+"|"+username+"|"+password);
+                Console.WriteLine(user + ","+platform+","+username+","+password);
             }
         }
         static void InsertNewEntry(SQLiteConnection connection,String User,String platform,String username,String password){
