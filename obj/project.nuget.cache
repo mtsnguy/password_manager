@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qyUGqHGMpcNdNgSFQHtqDewJ+iemL/tX43FgmpeK5rNfr8M8+sZh75O2yYO94z5HARzoQRN599c4Oi7aJYi3lA==",
+  "dgSpecHash": "yfeNkfk3I1CJnYs1kBGlMd7+wHpe8QFH0L7nwxZQCtI8vEBB/3H714Ysy/Hzr/buA1T4hgSPx3fYwF24uBAYAQ==",
   "success": true,
   "projectFilePath": "/home/sabo/Desktop/github/console_program/console_program.csproj",
   "expectedPackageFiles": [
-    "/home/sabo/.nuget/packages/system.data.sqlite.core/1.0.113.1/system.data.sqlite.core.1.0.113.1.nupkg.sha512"
+    "/home/sabo/.nuget/packages/system.data.sqlite.core/1.0.113.1/system.data.sqlite.core.1.0.113.1.nupkg.sha512",
+    "/home/sabo/.nuget/packages/microsoft.netcore.app.runtime.win-x64/3.1.5/microsoft.netcore.app.runtime.win-x64.3.1.5.nupkg.sha512",
+    "/home/sabo/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/3.1.5/microsoft.aspnetcore.app.runtime.win-x64.3.1.5.nupkg.sha512",
+    "/home/sabo/.nuget/packages/microsoft.netcore.app.host.win-x64/3.1.5/microsoft.netcore.app.host.win-x64.3.1.5.nupkg.sha512"
   ],
   "logs": []
 }
