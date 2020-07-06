@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qyUGqHGMpcNdNgSFQHtqDewJ+iemL/tX43FgmpeK5rNfr8M8+sZh75O2yYO94z5HARzoQRN599c4Oi7aJYi3lA==",
+  "success": true,
+  "projectFilePath": "/home/sabo/Desktop/github/console_program/console_program.csproj",
+  "expectedPackageFiles": [
+    "/home/sabo/.nuget/packages/system.data.sqlite.core/1.0.113.1/system.data.sqlite.core.1.0.113.1.nupkg.sha512"
+  ],
+  "logs": []
+}

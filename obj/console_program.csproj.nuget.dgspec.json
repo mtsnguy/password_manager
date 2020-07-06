@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/sabo/Desktop/github/console_program/console_program.csproj": {}
+  },
+  "projects": {
+    "/home/sabo/Desktop/github/console_program/console_program.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sabo/Desktop/github/console_program/console_program.csproj",
+        "projectName": "console_program",
+        "projectPath": "/home/sabo/Desktop/github/console_program/console_program.csproj",
+        "packagesPath": "/home/sabo/.nuget/packages/",
+        "outputPath": "/home/sabo/Desktop/github/console_program/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sabo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[1.0.113.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/87/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
